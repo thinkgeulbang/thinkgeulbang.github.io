@@ -13,29 +13,21 @@
       text-align: center;
     }
 
-    h1, h2 {
+    h1, h3 {
       margin: 10px 0;
     }
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
-    }
-
     .gallery img {
-      width: 200px;
+      display: block;
+      margin: 20px auto; /* 세로로 한 줄, 가운데 정렬 */
+      max-width: 100%;   /* 브라우저 크기 넘지 않도록 제한 (필요시) */
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 <body>
   <h1>꿈별샘 이현경 작가 프로필</h1>
-  <h4>꿈별샘 이현경 작가 프로필입니다.</h4>
+  <h3>꿈별샘 이현경 작가 프로필입니다.</h3>
   
   <div class="gallery">
     <img src="./images/001.png" alt="profile" style="max-width: 100%;">
