@@ -22,8 +22,19 @@
       margin: 20px auto; /* 세로로 한 줄, 가운데 정렬 */
       max-width: 100%;   /* 브라우저 크기 넘지 않도록 제한 (필요시) */
       height: auto;
+      /* 드래그 방지 */
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      pointer-events: none;
     }
   </style>
+   <!-- 전체 페이지 우클릭 방지 -->
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script> 
 </head>
 <body>
   <h1>꿈별샘 이현경 작가 프로필</h1>
